@@ -300,7 +300,7 @@ const Section2: React.FC<SectionProps> = ({ scrollYProgress }) => {
   );
 };
 
-const HeroScrollAnimation = forwardRef<HTMLElement>((props, ref) => {
+const HeroScrollAnimation = forwardRef<HTMLElement>((_props, _ref) => {
   const container = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: container,
